@@ -3,52 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>Portfolio</title>
 </head>
 <body>
     <h1>Andres Niebles - Riwi Developer</h1>
-    <nav><a href="#about-me">About Me</a>
+
+    <!--Nav-->
+    <nav>
+        <a href="#about-me">About Me</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <!--Section about me -->
-    <section id="about-me">
-        <h2>About me</h2>
-        <p>Hello, I'm Andres</p>
-        <p>I love creating attraticve and functional websites and I'm constantly learning to improve my skills</p>
-        <p>More details about you...</p>
-    </section>
-    <img src="https://thumbs.dreamstime.com/b/hombre-negro-sin-afeitar-calvo-en-sus-a%C3%B1os-48601489.jpg" alt="Foto" height="500" width="400">
 
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>PYTHON</li>
-    </ul>
+    <!--Section about me -->
+    <section class="aboutme"  id="about-me">
+        <h2>About me</h2>
+        <p>Hello, I'm Andres 👋 </p>
+        <p>I love creating attraticve and functional websites and I'm constantly learning to improve my skills</p>
+        <p>I like learn languages like english, portugues also like ice cream.</p>
+   
+
+        <img src="https://thumbs.dreamstime.com/b/hombre-negro-sin-afeitar-calvo-en-sus-a%C3%B1os-48601489.jpg" alt="Fotoperfil" height="300" width="300">
+
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>PYTHON</li>
+        </ul>
+
+    </section>
     
-    <section id="projects">
+    <!--section about project-->
+    <section class="projects" id="projects">
+
         <h2>Projects</h2>
         <h3>Project 1: Portfolio website</h3>
         <p>This is my first project in Riwi where I built a personal portfolio using only HTML.</p>
-        <img src="" alt="">
+
+        <img src="" alt="project image">
+        <br>
+        <br>
+        <table>
+            <tr>
+                <th>Project Name</th>
+                <th>Technologies Used</th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                <td>Portfolio Website</td>
+                <td>HTML & CSS</td>
+                <td><i class="fa-brands fa-github"></i><a href="https://github.com/AndresN329/Personal-Portfolio-HTML-" target="_blank">View Project</a></td>
+            </tr>
+            <tr>
+                <td>product validation system</td>
+                <td>PYTHON</td>
+                <td><i class="fa-brands fa-github"></i><a href="https://github.com/AndresN329/Sistema_De_Validacion_de_Productos_Training1" target="_blank">View Project</a></td>
+            </tr>
+        </table>
     </section>
 
-    <table>
-        <tr>
-            <th>Project Name</th>
-            <th>Technologies Used</th>
-            <th>Link</th>
-        </tr>
-        <tr>
-            <td>Portfolio Website</td>
-            <td>HTML</td>
-            <td><a href="">View Project</a></td>
-        </tr>
-    </table>
+    <section class="contact" id="contact">
 
-    <section>
-    <form action="" method="">
+        <h2>Contact form</h2>
+    <form action="/send" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required><br>
 
@@ -56,13 +77,13 @@
         <input type="email" id="email" name="email" required><br>
 
         <label for="message">Message:</label>
-        <textarea name="message" id="message"></textarea><br>
+        <textarea rows="2" cols="20" name="message" id="message"></textarea><br>
 
         <input type="submit" value="Send">
     </form>
     </section>
 
-    <a href="https://github.com/AndresN329" target="_blank">GitHub</a>
+    <i class="fa-brands fa-github"></i><a href="https://github.com/AndresN329" target="_blank"></i>GitHub</a>
 
 </body>
 </html>
